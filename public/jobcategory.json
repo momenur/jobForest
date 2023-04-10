@@ -1,0 +1,26 @@
+[
+    {
+        "id": "101",
+        "name": "Account & Finance",
+        "jobPost": 300,
+        "img": "https://cdn-icons-png.flaticon.com/512/1570/1570887.png"
+    },
+    {
+        "id": "102",
+        "name": "Creative Design",
+        "jobPost": 450,
+        "img": "https://cdn-icons-png.flaticon.com/512/4804/4804423.png"
+    },
+    {
+        "id": "103",
+        "name": "Marketing & Sales",
+        "jobPost": 600,
+        "img": "https://cdn-icons-png.flaticon.com/512/3141/3141158.png"
+    },
+    {
+        "id": "104",
+        "name": "Engineering Job",
+        "jobPost": 350,
+        "img": "https://cdn-icons-png.flaticon.com/512/1839/1839274.png"
+    }
+]
