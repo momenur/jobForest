@@ -15,7 +15,7 @@ const Navbar = () => {
                 }</span>
             </div>
             <div className={`md:flex justify-between items-center md:static duration-700 p-4 md:w-9/12 mx-auto ${open ? 'md:mt-0' : '-mt-72 md:-mt-0'}`}>
-                <h1 className='text-3xl'>Job Forest</h1>
+                <h1 className='text-4xl font-bold'>Job Forest</h1>
                 <div className='gap-5 md:flex'>
                     <Link to="/">Home</Link> <br />
                     <Link to="/statistics">Statistics</Link> <br />
