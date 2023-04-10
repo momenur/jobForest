@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from '../Header/Header';
+import { useLoaderData } from 'react-router-dom';
+import Category from '../Category/Category';
 
 const Home = () => {
+    const jobCategory = useLoaderData();
+    
     return (
         <div>
-            <h1 className=''>This IS Home</h1>
+            <Header></Header>
+            <Category jobcategory={jobCategory}></Category>
         </div>
     );
 };
