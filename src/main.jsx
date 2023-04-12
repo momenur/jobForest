@@ -41,13 +41,22 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: 'details/:jobID',
-        element: <JobDeatils></JobDeatils>,
-        loader: ({params}) => fetch('jobs.json')
-      },
-      {
         path: '*',
         element: <NotFound></NotFound>
+      },
+
+      {
+        path: "/details/:id",
+        element: <JobDeatils></JobDeatils>,
+        loader: async ({ params }) => {
+          const response = await fetch('jobs.json');
+          const data = await response.json();
+          // console.log(data)
+
+          const allData = data.filter(info => info.id == params.id);
+          console.log(typeof (allData))
+          return allData;
+        }
       }
     ]
   }
@@ -55,6 +64,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

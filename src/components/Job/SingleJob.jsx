@@ -1,9 +1,8 @@
 import React from 'react';
 import './SingleJob.css'
-import { BeakerIcon, MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { BeakerIcon, MapPinIcon, CurrencyDollarIcon, BriefcaseIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 import JobDeatils from '../JobDeatils/JobDeatils';
-
 const SingleJob = ({ job }) => {
     const { jobTitle, company, salary, img, location, jobLocation, id} = job;
     return (
@@ -17,7 +16,7 @@ const SingleJob = ({ job }) => {
             </div>
             <div className='flex gap-4'>
                 <p><MapPinIcon className="inline-block w-4 h-4 text-gray-800 me-2" />{location}</p>
-                <p><CurrencyDollarIcon className="inline-block w-4 h-4 text-gray-800 me-2" />Salary: {salary}</p>
+                <p><BriefcaseIcon className="inline-block w-4 h-4 text-gray-800 me-2" />Salary: {salary}</p>
             </div>
             <Link to={`details/${id}`}>
                 <button className='p-2 mt-4 text-xl font-semibold text-white rounded-md bg-violet-600'>View Details</button>

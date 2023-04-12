@@ -8,7 +8,7 @@ const Category = ({jobcategory}) => {
             <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='items-center justify-between mt-12 md:flex'>
                 {
-                    jobcategory.map(singleCatagory => <CategoryComponent key={singleCatagory.id} singleCatagory={singleCatagory}></CategoryComponent>)
+                    jobcategory.map( singleCatagory => <CategoryComponent key={singleCatagory.id} singleCatagory={singleCatagory}></CategoryComponent>)
                 }
             </div>
         </div>
