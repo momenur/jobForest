@@ -38,6 +38,11 @@ const Statistics = () => {
             id: 7,
             name: "Assignment-7",
             mark: 60
+        },
+        {
+            id: 8,
+            name: "Assignment-8",
+            mark: 60
         }
     ]
     return (
