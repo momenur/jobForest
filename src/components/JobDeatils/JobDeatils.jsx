@@ -6,11 +6,11 @@ import CommonHeader from '../CommonHeader/CommonHeader';
 
 const JobDeatils = () => {
     const detailsJobs = useLoaderData();
-    console.log(detailsJobs)
+    
 
     return (
         <div>
-            <CommonHeader>Job Details</CommonHeader>
+            <CommonHeader appliedJobs ={appliedJobs}>Job Details</CommonHeader>
             <div className='gap-4 mx-auto my-24 md:w-9/12 md:flex'>
                 <div className=''>
                     <p className='mb-6'><span className='font-bold'>Job Description: </span> {detailsJobs[0].description}</p>
