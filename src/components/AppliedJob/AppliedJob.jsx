@@ -1,9 +1,10 @@
 import React from 'react';
+import CommonHeader from '../CommonHeader/CommonHeader';
 
 const AppliedJob = () => {
     return (
         <div>
-            <h1>This Is Applied Job Page</h1>
+            <CommonHeader>Applied Job Page</CommonHeader>
         </div>
     );
 };

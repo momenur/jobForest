@@ -1,5 +1,6 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import CommonHeader from '../CommonHeader/CommonHeader';
 
 const Statistics = () => {
     const marks = [
@@ -40,7 +41,9 @@ const Statistics = () => {
         }
     ]
     return (
-        <div className='mx-auto mt-12 md:w-10/12'>
+        <div>
+            <CommonHeader>Statistics Page</CommonHeader>
+            <div className='mx-auto mt-12 md:w-10/12'>
             <AreaChart
                 width={1200}
                 height={350}
@@ -51,6 +54,7 @@ const Statistics = () => {
                  <YAxis></YAxis>
                  <Tooltip></Tooltip>
             </AreaChart>
+        </div>
         </div>
     );
 };
