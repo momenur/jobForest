@@ -1,9 +1,11 @@
 import React from 'react';
 import './SingleJob.css'
 import { BeakerIcon, MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
+import JobDeatils from '../JobDeatils/JobDeatils';
 
 const SingleJob = ({ job }) => {
-    const { jobTitle, company, salary, img, location, jobLocation } = job;
+    const { jobTitle, company, salary, img, location, jobLocation, id} = job;
     return (
         <div className='p-6 border border-gray-200 rounded-lg'>
             <img className='job-img' src={img} alt="" />
@@ -17,7 +19,9 @@ const SingleJob = ({ job }) => {
                 <p><MapPinIcon className="inline-block w-4 h-4 text-gray-800 me-2" />{location}</p>
                 <p><CurrencyDollarIcon className="inline-block w-4 h-4 text-gray-800 me-2" />Salary: {salary}</p>
             </div>
-            <button className='p-2 mt-4 text-xl font-semibold text-white rounded-md bg-violet-600'>View Details</button>
+            <Link to={`details/${id}`}>
+                <button className='p-2 mt-4 text-xl font-semibold text-white rounded-md bg-violet-600'>View Details</button>
+            </Link>
         </div>
     );
 };

@@ -14,6 +14,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
+import JobFeatils from './components/JobDeatils/JobDeatils';
+import JobDeatils from './components/JobDeatils/JobDeatils';
 
 
 const router = createBrowserRouter([
@@ -37,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: 'details/:jobID',
+        element: <JobDeatils></JobDeatils>,
+        loader: ({params}) => fetch('jobs.json')
       },
       {
         path: '*',
