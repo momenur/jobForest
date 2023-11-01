@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleJob from '../Job/SingleJob';
 
+// Components
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([])
     const [open, setOpen] = useState(false)

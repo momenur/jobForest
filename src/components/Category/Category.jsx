@@ -1,5 +1,6 @@
 import React from 'react';
 import CategoryComponent from '../CategoryComponent/CategoryComponent';
+// Components
 
 const Category = ({jobcategory}) => {
     return (
