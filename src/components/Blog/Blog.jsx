@@ -12,6 +12,7 @@ const Blog = () => {
                     2. When you have a component that needs to access data from multiple parts of the application, and you don't want to have to pass props through all the intermediate components.  <br />
                     3. When you have a large application with many components that need access to the same data, and you want to avoid "prop drilling" or passing props through many levels of components.</p>
                 </div>
+                {/* Custom hooks are very important */}
                 <div className='p-4 my-6 bg-red-100 rounded-md'>
                     <h2 className='text-3xl font-bold'>2.  What is custom hook ?</h2>
                     <p>In React, a custom hook is a reusable function that contains some logic that can be shared across multiple components. Custom hooks allow developers to abstract away complex logic and stateful functionality into reusable functions that can be easily shared across components.</p>
